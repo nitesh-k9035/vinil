@@ -1,155 +1,155 @@
-!DOCTYPE html
-html lang=en
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleHappy Birthday Kalatitle
-    !-- Tailwind CSS --
-    script src=httpscdn.tailwindcss.comscript
-    !-- Google Fonts Dancing Script for cursive --
-    link href=httpsfonts.googleapis.comcss2family=Dancing+Scriptwght@700&display=swap rel=stylesheet
-    !-- Canvas Confetti for animations --
-    script src=httpscdn.jsdelivr.netnpmcanvas-confetti@1.6.0distconfetti.browser.min.jsscript
-    style
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday shusmitha</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Dancing Script for cursive -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
         body {
-            font-family 'Arial', sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         .hero-heading {
-            font-family 'Dancing Script', cursive;
+            font-family: 'Dancing Script', cursive;
         }
-    style
-head
-body class=bg-gradient-to-br from-pink-100 to-cream-50 min-h-screen
-    !-- Floating Navigation Bar --
-    nav class=fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md shadow-lg z-50
-        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
-            div class=flex justify-between items-center py-4
-                div class=text-2xl font-bold text-pink-600Birthday Bashdiv
-                ul class=flex space-x-6
-                    lia href=#hero class=text-gray-700 hovertext-pink-500 transitionHomeali
-                    lia href=#wishes class=text-gray-700 hovertext-pink-500 transitionWishesali
-                    lia href=#gallery class=text-gray-700 hovertext-pink-500 transitionGalleryali
-                ul
-            div
-        div
-    nav
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-cream-50 min-h-screen">
+    <!-- Floating Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-pink-600">Birthday Bash</div>
+                <ul class="flex space-x-6">
+                    <li><a href="#hero" class="text-gray-700 hover:text-pink-500 transition">Home</a></li>
+                    <li><a href="#wishes" class="text-gray-700 hover:text-pink-500 transition">Wishes</a></li>
+                    <li><a href="#gallery" class="text-gray-700 hover:text-pink-500 transition">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    !-- Hero Section --
-    section id=hero class=pt-20 pb-16 px-4 smpx-6 lgpx-8 text-center
-        div class=max-w-4xl mx-auto
-            h1 class=hero-heading text-6xl smtext-8xl font-bold text-pink-600 mb-8Happy Birthday [Name]!h1
-            p class=text-xl text-gray-600 mb-8Wishing you a day filled with love, laughter, and all your favorite things!p
-            !-- Countdown Timer --
-            div id=countdown class=text-2xl font-semibold text-pink-500div
-        div
-    section
+    <!-- Hero Section -->
+    <section id="hero" class="pt-20 pb-16 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="hero-heading text-6xl sm:text-8xl font-bold text-pink-600 mb-8">Happy Birthday [Name]!</h1>
+            <p class="text-xl text-gray-600 mb-8">Wishing you a day filled with love, laughter, and all your favorite things!</p>
+            <!-- Countdown Timer -->
+            <div id="countdown" class="text-2xl font-semibold text-pink-500"></div>
+        </div>
+    </section>
 
-    !-- Wishes Section --
-    section id=wishes class=py-16 px-4 smpx-6 lgpx-8 bg-white bg-opacity-50
-        div class=max-w-7xl mx-auto
-            h2 class=text-4xl font-bold text-center text-pink-600 mb-12Sweet Wishesh2
-            div class=grid grid-cols-1 mdgrid-cols-2 lggrid-cols-3 gap-8
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicMay your birthday be as sweet as you are! Here's to another year of adventures and joy.p
-                    p class=text-pink-500 font-semibold mt-4- From Momp
-                div
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicHappy Birthday! You're growing up so fast, but you'll always be my little princess.p
-                    p class=text-pink-500 font-semibold mt-4- From Dadp
-                div
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicWishing you a birthday filled with unicorns, rainbows, and endless fun!p
-                    p class=text-pink-500 font-semibold mt-4- From Your Bestiep
-                div
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicAnother year older, but forever young at heart. Happy Birthday, sweetheart!p
-                    p class=text-pink-500 font-semibold mt-4- From Grandmap
-                div
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicMay your day be sprinkled with magic and your year ahead be full of dreams come true.p
-                    p class=text-pink-500 font-semibold mt-4- From Unclep
-                div
-                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
-                    p class=text-gray-700 italicHappy Birthday! You're the light of our lives. Have an amazing day!p
-                    p class=text-pink-500 font-semibold mt-4- From the Familyp
-                div
-            div
-        div
-    section
+    <!-- Wishes Section -->
+    <section id="wishes" class="py-16 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-12">Sweet Wishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"May your birthday be as sweet as you are! Here's to another year of adventures and joy."</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From Mom</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"Happy Birthday! You're growing up so fast, but you'll always be my little princess."</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From Dad</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"Wishing you a birthday filled with unicorns, rainbows, and endless fun!"</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From Your Bestie</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"Another year older, but forever young at heart. Happy Birthday, sweetheart!"</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From Grandma</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"May your day be sprinkled with magic and your year ahead be full of dreams come true."</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From Uncle</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 cursor-pointer">
+                    <p class="text-gray-700 italic">"Happy Birthday! You're the light of our lives. Have an amazing day!"</p>
+                    <p class="text-pink-500 font-semibold mt-4">- From the Family</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    !-- Photo Gallery --
-    section id=gallery class=py-16 px-4 smpx-6 lgpx-8
-        div class=max-w-7xl mx-auto
-            h2 class=text-4xl font-bold text-center text-pink-600 mb-12Memory Laneh2
-            div class=grid grid-cols-2 mdgrid-cols-3 lggrid-cols-4 gap-4
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-                div class=overflow-hidden rounded-lg shadow-lg
-                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
-                div
-            div
-        div
-    section
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-pink-600 mb-12">Memory Lane</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 1" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 2" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 3" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 4" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 5" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 6" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 7" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 8" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 9" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing" alt="Birthday Memory 10" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    !-- JavaScript for Countdown and Confetti --
-    script
-         Confetti on page load
+    <!-- JavaScript for Countdown and Confetti -->
+    <script>
+        // Confetti on page load
         window.onload = function() {
             confetti({
-                particleCount 100,
-                spread 70,
-                origin { y 0.6 }
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
             });
         };
 
-         Countdown Timer - Set to a future birthday date (e.g., next year)
-        const birthdayDate = new Date('2025-01-05');  Replace with actual birthday date
+        // Countdown Timer - Set to a future birthday date (e.g., next year)
+        const birthdayDate = new Date('2024-12-25T00:00:00'); // Replace with actual birthday date
         const countdownElement = document.getElementById('countdown');
 
         function updateCountdown() {
             const now = new Date();
             const timeLeft = birthdayDate - now;
 
-            if (timeLeft = 0) {
-                countdownElement.innerHTML = It's your birthday!;
+            if (timeLeft <= 0) {
+                countdownElement.innerHTML = "It's your birthday!";
                 return;
             }
 
-            const days = Math.floor(timeLeft  (1000  60  60  24));
-            const hours = Math.floor((timeLeft % (1000  60  60  24))  (1000  60  60));
-            const minutes = Math.floor((timeLeft % (1000  60  60))  (1000  60));
-            const seconds = Math.floor((timeLeft % (1000  60))  1000);
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
             countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until your birthday!`;
         }
 
         setInterval(updateCountdown, 1000);
         updateCountdown();
-    script
-body
-html
+    </script>
+</body>
+</html>
