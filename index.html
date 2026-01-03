@@ -1,71 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinil - Lord Krishna</title>
-    <style>
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleHappy Birthday Kala title
+    !-- Tailwind CSS --
+    script src=httpscdn.tailwindcss.comscript
+    !-- Google Fonts Dancing Script for cursive --
+    link href=httpsfonts.googleapis.comcss2family=Dancing+Scriptwght@700&display=swap rel=stylesheet
+    !-- Canvas Confetti for animations --
+    script src=httpscdn.jsdelivr.netnpmcanvas-confetti@1.6.0distconfetti.browser.min.jsscript
+    style
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff8e1;
-            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/411f42ef-d25b-4a7a-8be4-dc876712c82c.png');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            text-align: center;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            font-family 'Arial', sans-serif;
         }
-        header {
-            padding: 25px;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(3px);
-            border-bottom: 1px solid rgba(255,215,0,0.2);
+        .hero-heading {
+            font-family 'Dancing Script', cursive;
         }
-        h1 {
-            font-size: 3em;
-            margin: 0;
+    style
+head
+body class=bg-gradient-to-br from-pink-100 to-cream-50 min-h-screen
+    !-- Floating Navigation Bar --
+    nav class=fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md shadow-lg z-50
+        div class=max-w-7xl mx-auto px-4 smpx-6 lgpx-8
+            div class=flex justify-between items-center py-4
+                div class=text-2xl font-bold text-pink-600Birthday Bashdiv
+                ul class=flex space-x-6
+                    lia href=#hero class=text-gray-700 hovertext-pink-500 transitionHomeali
+                    lia href=#wishes class=text-gray-700 hovertext-pink-500 transitionWishesali
+                    lia href=#gallery class=text-gray-700 hovertext-pink-500 transitionGalleryali
+                ul
+            div
+        div
+    nav
+
+    !-- Hero Section --
+    section id=hero class=pt-20 pb-16 px-4 smpx-6 lgpx-8 text-center
+        div class=max-w-4xl mx-auto
+            h1 class=hero-heading text-6xl smtext-8xl font-bold text-pink-600 mb-8Happy Birthday [Name]!h1
+            p class=text-xl text-gray-600 mb-8Wishing you a day filled with love, laughter, and all your favorite things!p
+            !-- Countdown Timer --
+            div id=countdown class=text-2xl font-semibold text-pink-500div
+        div
+    section
+
+    !-- Wishes Section --
+    section id=wishes class=py-16 px-4 smpx-6 lgpx-8 bg-white bg-opacity-50
+        div class=max-w-7xl mx-auto
+            h2 class=text-4xl font-bold text-center text-pink-600 mb-12Sweet Wishesh2
+            div class=grid grid-cols-1 mdgrid-cols-2 lggrid-cols-3 gap-8
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicMay your birthday be as sweet as you are! Here's to another year of adventures and joy.p
+                    p class=text-pink-500 font-semibold mt-4- From Momp
+                div
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicHappy Birthday! You're growing up so fast, but you'll always be my little princess.p
+                    p class=text-pink-500 font-semibold mt-4- From Dadp
+                div
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicWishing you a birthday filled with unicorns, rainbows, and endless fun!p
+                    p class=text-pink-500 font-semibold mt-4- From Your Bestiep
+                div
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicAnother year older, but forever young at heart. Happy Birthday, sweetheart!p
+                    p class=text-pink-500 font-semibold mt-4- From Grandmap
+                div
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicMay your day be sprinkled with magic and your year ahead be full of dreams come true.p
+                    p class=text-pink-500 font-semibold mt-4- From Unclep
+                div
+                div class=bg-white rounded-lg shadow-lg p-6 transform hoverscale-105 transition duration-300 cursor-pointer
+                    p class=text-gray-700 italicHappy Birthday! You're the light of our lives. Have an amazing day!p
+                    p class=text-pink-500 font-semibold mt-4- From the Familyp
+                div
+            div
+        div
+    section
+
+    !-- Photo Gallery --
+    section id=gallery class=py-16 px-4 smpx-6 lgpx-8
+        div class=max-w-7xl mx-auto
+            h2 class=text-4xl font-bold text-center text-pink-600 mb-12Memory Laneh2
+            div class=grid grid-cols-2 mdgrid-cols-3 lggrid-cols-4 gap-4
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+                div class=overflow-hidden rounded-lg shadow-lg
+                    img src=https://drive.google.com/file/d/1hjD1nJ4-YSlbIly9Gx16_mtMqGVGnmkw/view?usp=sharing
+                div
+            div
+        div
+    section
+
+    !-- JavaScript for Countdown and Confetti --
+    script
+         Confetti on page load
+        window.onload = function() {
+            confetti({
+                particleCount 100,
+                spread 70,
+                origin { y 0.6 }
+            });
+        };
+
+         Countdown Timer - Set to a future birthday date (e.g., next year)
+        const birthdayDate = new Date('2025-01-05');  Replace with actual birthday date
+        const countdownElement = document.getElementById('countdown');
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeLeft = birthdayDate - now;
+
+            if (timeLeft = 0) {
+                countdownElement.innerHTML = It's your birthday!;
+                return;
+            }
+
+            const days = Math.floor(timeLeft  (1000  60  60  24));
+            const hours = Math.floor((timeLeft % (1000  60  60  24))  (1000  60  60));
+            const minutes = Math.floor((timeLeft % (1000  60  60))  (1000  60));
+            const seconds = Math.floor((timeLeft % (1000  60))  1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until your birthday!`;
         }
-        .content {
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            max-width: 800px;
-            margin: 40px auto;
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255,215,0,0.3);
-            box-shadow: 0 0 20px rgba(0,0,0,0.8);
-        }
-        footer {
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Vinil</h1>
-    </header>
-    <div class="content">
-        <h2>About Lord Krishna</h2>
-        <p>
-            Lord Krishna is one of the most revered deities in Hinduism, known for his divine playfulness, wisdom, and love. 
-            He is often depicted as a young man playing the flute, surrounded by nature and devotees. 
-            Krishna is considered the eighth avatar of Vishnu and is celebrated for his teachings in the Bhagavad Gita, 
-            where he imparts spiritual wisdom and guidance to Arjuna on the battlefield of Kurukshetra.
-        </p>
-        <p>
-            Krishna's life is filled with enchanting stories, from his childhood exploits in Vrindavan to his role in the Mahabharata. 
-            He is also known for his divine love for Radha, symbolizing the ultimate union of the soul with the divine.
-        </p>
-    </div>
-    <footer>
-        <p>&copy; 2023 Vinil. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    script
+body
+html
