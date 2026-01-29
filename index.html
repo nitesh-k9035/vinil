@@ -25,11 +25,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="text-2xl font-bold text-pink-600">Dhruvanth Events & Decoration</div>
-                <ul class="flex space-x-6">
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-6">
                     <li><a href="#hero" class="text-gray-700 hover:text-pink-500 transition">Home</a></li>
                     <li><a href="#wishes" class="text-gray-700 hover:text-pink-500 transition">Service's</a></li>
                     <li><a href="#gallery" class="text-gray-700 hover:text-pink-500 transition">Gallery</a></li>
                     <li><a href="https://wa.me/7899610597" target="_blank" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">Contact</a></li>
+                </ul>
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white bg-opacity-90 backdrop-blur-md shadow-lg">
+                <ul class="flex flex-col space-y-4 py-4 px-4">
+                    <li><a href="#hero" class="text-gray-700 hover:text-pink-500 transition">Home</a></li>
+                    <li><a href="#wishes" class="text-gray-700 hover:text-pink-500 transition">Service's</a></li>
+                    <li><a href="#gallery" class="text-gray-700 hover:text-pink-500 transition">Gallery</a></li>
+                    <li><a href="https://wa.me/7899610597" target="_blank" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition text-center">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -117,6 +133,15 @@
         </div>
     </section>
 
+    <!-- Contact Section at Bottom -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-pink-100 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-pink-600 mb-8">Get in Touch</h2>
+            <p class="text-xl text-gray-600 mb-8">Ready to plan your perfect event? Contact us now!</p>
+            <a href="https://wa.me/7899610597" target="_blank" class="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition text-lg">Contact Us on WhatsApp</a>
+        </div>
+    </section>
+
     <!-- JavaScript for Countdown and Confetti -->
     <script>
         // Confetti on page load
@@ -151,6 +176,14 @@
 
         setInterval(updateCountdown, 1000);
         updateCountdown();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
